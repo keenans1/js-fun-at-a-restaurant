@@ -34,7 +34,7 @@ function addMenuItem(pizzaRestaurant, menuItem) {
 
 function removeMenuItem(pizzaRestaurant, name, type) {
 
-  var result = '';
+  var result = `Sorry, we don't sell ${name}, try adding a new recipe!`;
 
   if (type === 'breakfast') {
 
@@ -73,10 +73,6 @@ function removeMenuItem(pizzaRestaurant, name, type) {
         result = `No one is eating our ${dinnerItemName} - it has been removed from the ${type} menu!`;
       }
     }
-  }
-
-  if (result === '') {
-    result = `Sorry, we don't sell ${name}, try adding a new recipe!`;
   }
 
   return result;
